@@ -1,18 +1,18 @@
 
 .navText {
-    @apply px-3 py-2 rounded-md text-sm font-medium;
+    @apply px-3 py-2 rounded-md text-xl;
 }
 
 .navTextActive {
-    @apply px-3 py-2 rounded-md text-sm font-medium hover:text-primary;
+    @apply px-3 py-2 rounded-md hover:text-primary text-xl;
 }
 
 .navTextMobile {
-    @apply block px-3 py-2 rounded-md text-base font-medium;
+    @apply block px-3 py-2 rounded-md text-xl;
 }
 
 .navTextActiveMobile {
-    @apply block px-3 py-2 rounded-md text-base font-medium;
+    @apply block px-3 py-2 rounded-md text-xl;
 }
 
 .notificationButton {
@@ -36,5 +36,5 @@
 }
 
 .dropDownLink {
-    @apply block px-3 py-2 rounded-md text-base font-medium;
+    @apply block px-3 py-2 rounded-md text-xl;
 }
