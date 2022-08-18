@@ -3,7 +3,7 @@ module.exports = {
   plugins: [require('daisyui')],
   theme: {
     screens: {
-      'sm': '812px',
+      'sm': '312px',
       // => @media (min-width: 576px) { ... }
 
       'md': '812px',
