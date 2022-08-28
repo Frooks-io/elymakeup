@@ -8,16 +8,22 @@ import {FooterComponent} from './components/footer/footer.component';
 import {HomeComponent} from './components/home/home.component';
 import {NavbarComponent} from './components/navbar/navbar.component';
 import {AppRoutingModule} from './app-routing.module';
+import {ProductsComponent} from './components/products/products.component';
+
+const routes = [
+    {path: '', redirectTo: 'novedades', pathMatch: 'full'},
+    {path: 'novedades', component: HomeComponent},
+    {path: 'productos', component: ProductsComponent}];
 
 @NgModule({
     imports: [
         BrowserModule,
         ReactiveFormsModule,
-        RouterModule.forRoot([{path: '', component: AppComponent}]),
+        RouterModule.forRoot(routes),
         AppRoutingModule,
     ],
-    declarations: [AppComponent, FooterComponent, HomeComponent, NavbarComponent],
-    bootstrap: [AppComponent, FooterComponent, HomeComponent, NavbarComponent],
+    declarations: [AppComponent, FooterComponent, HomeComponent, NavbarComponent, ProductsComponent],
+    bootstrap: [AppComponent, FooterComponent, HomeComponent, NavbarComponent, ProductsComponent],
 })
 export class AppModule {
 }
